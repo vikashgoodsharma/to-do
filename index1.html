@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="main-style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(15, 14, 14);
+        }
+    </style>
+</head>
+
+<body>
+    <img style="width:100%; height: auto;" src="bg-desktop-dark.jpg" alt="">
+    <div class="container">
+        <div class="centred">
+            <h1>TO-DO LIST</h1>
+        </div>
+        <div id="list" class="header">
+            <input type="text" id="inputid" placeholder="Create a to do list">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+        <ul id="myUL">
+            <li class="checked">Complete online javascript course</li>
+            <li>jog around the park 3x</li>
+            <li>10 minutes meditation</li>
+            <li>Read for 1 hour</li>
+            <li>Pick up groceries</li>
+            <li>Complete todo app</li>
+            <button type="button" id="clearlist" onclick="removeAll()">Clear</button>
+        </ul>
+    </div>
+
+    <link rel="text/javascript" href="main-script.js">
+    <script src="main-script.js"></script>
+</body>
+
+</html>
